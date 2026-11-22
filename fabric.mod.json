@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "playertotemskin",
+  "version": "${version}",
+  "name": "Player Totem Skin",
+  "description": "Zeigt beim Totem der Unsterblichkeit den Skin und die Ruestung des jeweiligen Spielers.",
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.playertotemskin.PlayerTotemSkinClient"],
+    "modmenu": ["dev.playertotemskin.gui.ModMenuIntegration"]
+  },
+  "mixins": [
+    { "config": "playertotemskin.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

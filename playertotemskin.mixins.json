@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.playertotemskin.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPacketListenerMixin",
+    "GuiMixin",
+    "PlayerAccessor",
+    "ScreenEffectRendererMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}
